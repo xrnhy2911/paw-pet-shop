@@ -1,0 +1,23 @@
+.custom-header,
+.custom-header * {
+    background-color: #ffebde;
+    color: #f88d58;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 70px; */
+}
+
+#custom-search {
+    background-color: white;
+}
+
+.custom-search-btn {
+    background-color: #f88d58;
+    color: white !important;
+    border: #f88d58;
+}
+
+.custom-search-btn:hover {
+    background-color: #ef6a28;
+}
