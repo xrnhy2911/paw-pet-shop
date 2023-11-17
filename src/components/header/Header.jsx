@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "./header.css";
+import "../header/header.css";
 export default function Header() {
   return (
     <>
@@ -18,8 +18,8 @@ export default function Header() {
           // expand="lg"
           className="custom-header"
         >
-          <Container fluid className="custom-header">
-            <Navbar.Brand href="#">Paw Pet Shop</Navbar.Brand>
+          <Container className="custom-header">
+            <Navbar.Brand href="#">PawPet <br /> Shop</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
