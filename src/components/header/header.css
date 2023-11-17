@@ -1,23 +1,37 @@
 .custom-header,
 .custom-header * {
-    background-color: #ffebde;
-    color: #f88d58;
+    background-color: #f9a378;
+    color: #e21c21 !important;
     font-weight: 700;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    /* height: 70px; */
 }
 
-#custom-search {
+.custom-sub-nav,
+.dropdown-toggle {
+    color: #57557d !important;
+}
+
+
+.custom-dropdown-item:hover {
+    background-color: #f5905d;
+    color: white !important;
+}
+
+.custom-dropdown-item:active {
+    color: rgb(235, 230, 230) !important;
+}
+
+/* #custom-search {
     background-color: white;
 }
 
 .custom-search-btn {
-    background-color: #f88d58;
+    background-color: #f88d58 !important;
     color: white !important;
-    border: #f88d58;
+    border: #f88d58 !important;
 }
 
 .custom-search-btn:hover {
-    background-color: #ef6a28;
-}
+    background-color: #ef6a28 !important;
+} */
