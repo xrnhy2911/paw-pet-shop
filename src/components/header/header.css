@@ -1,7 +1,7 @@
 .custom-header,
 .custom-header * {
     background-color: #ffebde;
-    color: #f88d58;
+    color: #f88d58 !important ; 
     font-weight: 700;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,11 +13,11 @@
 }
 
 .custom-search-btn {
-    background-color: #f88d58;
+    background-color: #f88d58 !important;
     color: white !important;
-    border: #f88d58;
+    border: #f88d58 !important;
 }
 
 .custom-search-btn:hover {
-    background-color: #ef6a28;
+    background-color: #ef6a28 !important;
 }
