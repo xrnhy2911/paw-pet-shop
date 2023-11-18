@@ -7,11 +7,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#my-brand {
+    font-size: 24px;
+}
+
 .custom-sub-nav,
 .dropdown-toggle {
     color: #57557d !important;
 }
-
 
 .custom-dropdown-item:hover {
     background-color: #f5905d;
