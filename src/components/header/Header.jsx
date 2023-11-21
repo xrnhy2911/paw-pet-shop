@@ -29,10 +29,10 @@ export default function Header() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link as={Link} to={"/home"}>
+              <Nav.Link as={Link} className="mx-2" to={"/home"}>
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to={"/products"} className="custom-sub-nav">
+              <Nav.Link as={Link} to={"/products"} className="custom-sub-nav mx-2">
                 Products
               </Nav.Link>
               <NavDropdown
@@ -61,11 +61,12 @@ export default function Header() {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link>
+              <Nav.Link className="mx-2">
                 <BsCart3 />
                 {/* Replace with your actual shopping cart component */}
               </Nav.Link>
               <NavDropdown
+              className="mx-2"
                 title={<BsPerson />} // Use UserAvatar as the dropdown title
                 id="navbarScrollingDropdown"
                 align={"end"}
