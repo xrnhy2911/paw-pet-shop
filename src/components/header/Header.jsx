@@ -32,8 +32,8 @@ export default function Header() {
               <Nav.Link as={Link} to={"/home"}>
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to={"/about"} className="custom-sub-nav">
-                About
+              <Nav.Link as={Link} to={"/products"} className="custom-sub-nav">
+                Products
               </Nav.Link>
               <NavDropdown
                 title="Link"
@@ -43,7 +43,7 @@ export default function Header() {
               >
                 <NavDropdown.Item
                   className="custom-dropdown-item"
-                  href="/products"
+                  href="/about"
                 >
                   About
                 </NavDropdown.Item>
