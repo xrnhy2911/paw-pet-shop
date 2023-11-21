@@ -1,4 +1,5 @@
 import './App.css';
+import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Home from './components/home/Home'
 import Header from './components/header/Header';
@@ -11,6 +12,7 @@ function App() {
         <div className='container1'></div>
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<Contact />} />
           {/* <Route path="/profile" element={<Profile />} />
           <Route path="/tvshows" element={<Tvshows />} />
           <Route path="/movies" element={<Movies />} />
@@ -18,6 +20,7 @@ function App() {
         </Routes>
       </Router>
       <Footer />
+      
     </div>
   );
 }

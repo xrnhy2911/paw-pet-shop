@@ -46,7 +46,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="sb_footer-link_div">
-            <h4>CUSTOMER SERVICE</h4>
+            <h4>CONTACTS</h4>
             <a href="/hotline">
               <p>123-456-789</p>
             </a>
@@ -60,12 +60,12 @@ export default function Footer() {
             <h4>FOLLOW OUR</h4>
             <div className="socialmedia">
               <p>
-                <img className="social-media-image" src={fb} alt="" srcset="" />
+                <img className="social-media-image" src={insta} alt="" srcset="" />
               </p>
               <p>
                 <img
                   className="social-media-image"
-                  src={insta}
+                  src={fb}
                   alt=""
                   srcset=""
                 />
