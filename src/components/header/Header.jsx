@@ -43,15 +43,15 @@ export default function Header() {
               >
                 <NavDropdown.Item
                   className="custom-dropdown-item"
-                  href="#action3"
+                  href="/products"
                 >
-                  Action
+                  About
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   className="custom-dropdown-item"
-                  href="#action4"
+                  href="/contact-form"
                 >
-                  Another action
+                  Contact form
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
@@ -76,6 +76,13 @@ export default function Header() {
                   className="custom-dropdown-item"
                 >
                   Profile
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/login"
+                  className="custom-dropdown-item"
+                >
+                  Log In
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item

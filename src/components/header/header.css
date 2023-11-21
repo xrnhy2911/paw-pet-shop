@@ -4,7 +4,7 @@
     color: #e21c21 !important;
     font-weight: 700;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: nunito_sans;
 }
 
 #my-brand {
@@ -17,7 +17,7 @@
 }
 
 .custom-dropdown-item:hover {
-    background-color: #f5905d;
+    background-color: #ffcdb3 !important;
     color: white !important;
 }
 
