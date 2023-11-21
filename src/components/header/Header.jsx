@@ -43,7 +43,7 @@ export default function Header() {
               >
                 <NavDropdown.Item
                   className="custom-dropdown-item"
-                  href="#action3"
+                  href="/products"
                 >
                   Action
                 </NavDropdown.Item>
