@@ -4,7 +4,7 @@
 
  .footer {
      background-color: #F88D58;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Times New Roman';
+     font-family: nunito_sans;
  }
 
  .sb_footer {
@@ -33,13 +33,14 @@
      flex-direction: column;
  }
 
-
  .socialmedia {
      display: flex;
      flex-direction: row;
  }
 
  .sb_footer-link_div h4 {
+    font-weight: 700;
+
      font-size: 20px;
      line-height: 17px;
      margin-bottom: 0.9rem;
