@@ -49,9 +49,9 @@ export default function Header() {
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   className="custom-dropdown-item"
-                  href="/contact-form"
+                  href="/contact"
                 >
-                  Contact form
+                  Contact
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
