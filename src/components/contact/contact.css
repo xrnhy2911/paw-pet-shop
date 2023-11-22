@@ -5,7 +5,7 @@
     font-family: 'Noto Serif', serif;
 }
 
-.login_contact{
+.contact{
     position: relative;
     min-height: 100vh;
     z-index: 0;
@@ -17,12 +17,21 @@
     align-items: center;
 }
 
-.login_sb_contact{
+.sb_contact{
     max-width: 800px;
     margin-top: 0 auto;
 }
 
-.login_contact h2{
+/* .contact h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #302f51;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+} */
+
+.contact h2{
     line-height: 40px;
     margin-bottom: 5px;
     font-size: 30px;
@@ -31,13 +40,13 @@
     text-align: center;
 }
 
-.login_contact .login_sb_contact-link {
+.contact .sb_contact-link {
     position: relative;
     display: flex;
     margin: 30px 0;
 }
 
-.login_sb_contact-link-div {
+.sb_contact-link-div {
     flex-basis: 50%;
     padding: 3em 3em;
     background: #fffaf5;
@@ -46,48 +55,38 @@
     border-bottom-left-radius: 8px;
 }
 
-.login_contact-img{
+.contact-img{
     flex-basis: 50%;
     background-size: cover;
     background: #302f51;
     padding: 20px;
-    border-top-left-radius: 8px !important;
-    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
     align-items: center;
     display: grid;
 
 }
-.login_contact img{
+.contact img{
     max-width: 100%;
 }
 
-.login_btn, 
-button{
-    border: 1px solid #302f51;
-    border-radius: 5px;
-    padding: 5px 0;
-} 
+.btn, 
+button, 
 input{
     border-radius: 5px;
 }
 
-.login_btn{
-    margin-top: 10px;
-}
-
-
-.login_btn:hover, 
+.btn:hover, 
 button:hover{
     color: #302f51;
     transition: 0.5s ease;
-    background-color: whitesmoke;
 }
 
-.login_contact form {
+.contact form {
     margin: 30px 0;
 }
 
-.login_contact input, textarea{
+.contact input, textarea{
     outline: none !important;
     margin-bottom: 15px;
     font-stretch: 16px;
@@ -101,12 +100,12 @@ button:hover{
     transition: 0.3s ease;
 }
 
-.login_contact input:focus{
+.contact input:focus{
     background: transparent;
     border: 1px solid #f88d58;
 }
 
-.login_contact button{
+.contact button{
     font-size: 18px;
     color: #f5b60e;
     width: 100%;
@@ -116,21 +115,21 @@ button:hover{
 }
 
 @media(max-width:736px){
-    .login_contact .login_sb_contact-link{
+    .contact .sb_contact-link{
         flex-direction: column;
     }
-    .login_contact form{
+    .contact form{
         margin-top: 30px;
         margin-bottom: 10px;
 
     }
-    .login_socialmedia{
+    .socialmedia{
         border-radius: 0;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
         order: 2;
     }
-    .login_sb_contact-link-div{
+    .sb_contact-link-div{
         order: 1;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
