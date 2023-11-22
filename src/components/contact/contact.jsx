@@ -21,6 +21,8 @@ export default function Contact() {
                         <img src={chabong} alt="" srcset="" />
                     </div>
                 </div>
+                
+
             </div>
         </div>
 
