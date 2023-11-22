@@ -60,12 +60,12 @@ export default function Footer() {
             <h4>FOLLOW OUR</h4>
             <div className="socialmedia">
               <p>
-                <img className="social-media-image" src={fb} alt="" srcset="" />
+                <img className="social-media-image" src={insta} alt="" srcset="" />
               </p>
               <p>
                 <img
                   className="social-media-image"
-                  src={insta}
+                  src={fb}
                   alt=""
                   srcset=""
                 />

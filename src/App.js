@@ -1,4 +1,5 @@
 import './App.css';
+import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Home from './components/home/Home'
 import Header from './components/header/Header';
@@ -16,6 +17,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/products" element={<ProductCard />} />
+          <Route path="/contact" element={<Contact />} />
           {/* <Route path="/tvshows" element={<Tvshows />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/moviesdetail" element={<MoviesDetail />} /> */}
