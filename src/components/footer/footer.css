@@ -45,7 +45,7 @@
     margin-bottom: 10px;
     margin-top: 10px;
     text-align: left;
-    color: black;
+    color: #45344d;
     font-family: 'Nunito Sans', sans-serif;
 
 }
@@ -55,6 +55,8 @@
     font-size: 14px;
     line-height: 17px;
     margin-top: 1rem;
+    color: #45344d;
+
 }
 
 .sb_footer-link_div a{
