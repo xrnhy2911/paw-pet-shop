@@ -1,5 +1,5 @@
 import React from 'react';
-import theCat from '../../img/chabongimg.jpg'
+import theCat from '../../img/babycute.jpg'
 import './login.css'
 
 export default function Login(){

@@ -5,7 +5,7 @@
     font-family: 'Noto Serif', serif;
 }
 
-.login_contact{
+.about{
     position: relative;
     min-height: 100vh;
     z-index: 0;
@@ -17,12 +17,12 @@
     align-items: center;
 }
 
-.login_sb_contact{
+.sb_about{
     max-width: 800px;
     margin-top: 0 auto;
 }
 
-.login_contact h2{
+.about h1{
     line-height: 40px;
     margin-bottom: 5px;
     font-size: 30px;
@@ -31,13 +31,13 @@
     text-align: center;
 }
 
-.login_contact .login_sb_contact-link {
+.about .sb_about {
     position: relative;
     display: flex;
     margin: 30px 0;
 }
 
-.login_sb_contact-link-div {
+.sb_about-text {
     flex-basis: 50%;
     padding: 3em 3em;
     background: #fffaf5;
@@ -46,44 +46,27 @@
     border-bottom-left-radius: 8px;
 }
 
-.login_contact-img{
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about-img{
     flex-basis: 50%;
     background-size: cover;
-    background: #302f51;
-    padding: 12px;
     border-top-left-radius: 8px !important;
     border-bottom-left-radius: 8px !important;
     align-items: center;
     display: grid;
 
 }
-.login_contact img{
+.about img{
     max-width: 100%;
+    height: 100%;
 }
 
-.login_btn, 
-button{
-    border: 1px solid #302f51;
-    border-radius: 5px;
-    padding: 5px 0;
-} 
-input{
-    border-radius: 5px;
-}
-
-.login_btn{
-    margin-top: 10px;
-}
-
-
-.login_btn:hover, 
-button:hover{
-    color: #302f51;
-    transition: 0.5s ease;
-    background-color: whitesmoke;
-}
-
-.login_contact form {
+/* .about {
     margin: 30px 0;
 }
 
@@ -114,23 +97,23 @@ button:hover{
     font-weight: 600;
     transition: 0.3s ease;
 }
-
+ */
 @media(max-width:736px){
-    .login_contact .login_sb_contact-link{
+    .about .sb_about{
         flex-direction: column;
     }
-    .login_contact form{
+    /* .about form{
         margin-top: 30px;
         margin-bottom: 10px;
 
-    }
+    } */
     .login_socialmedia{
         border-radius: 0;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
         order: 2;
     }
-    .login_sb_contact-link-div{
+    .about-img{
         order: 1;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
