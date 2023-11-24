@@ -18,7 +18,7 @@ export default function Header() {
         fixed="top"
         collapseOnSelect
       >
-        <Container fluid className="custom-header">
+        <Container fluid className="custom-header2">
           <Navbar.Brand href="#" id="my-brand">
             PawPet <br /> Shop
           </Navbar.Brand>

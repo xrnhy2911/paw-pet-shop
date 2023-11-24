@@ -1,0 +1,25 @@
+import React from "react";
+
+export default function SearchPage() {
+  return (
+    <div className="col-lg-8 mx-auto">
+      <div className="input-group p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+        <div className="input-group-prepend">
+          <button
+            id="button-addon2"
+            type="button"
+            className="btn btn-link text-warning"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <input
+          type="search"
+          placeholder="What're you searching for?"
+          aria-describedby="button-addon2"
+          className="form-control border-0 bg-light"
+        />
+      </div>
+    </div>
+  );
+}
