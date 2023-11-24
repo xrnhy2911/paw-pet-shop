@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import ProductModal from "../modal/ProductModal";
 
 import image1 from "../../img/munchkin_cat.jpg";
 import image2 from "../../img/birman_1.jpg";
@@ -15,7 +16,20 @@ import image6 from "../../img/ragdoll_3.jpg";
 import SearchBar from "../search-bar/SearchBar";
 
 export default function ProductCard() {
+  const [modalShow, setModalShow] = useState({
+    show: false,
+    productData: null,
+  });
   const images = [image1, image2, image3, image4, image5, image6];
+
+  const handleShowModal = (productData) => {
+    setModalShow({ show: true, productData: productData });
+  };
+
+  const handleCloseModal = () => {
+    setModalShow({ show: false, productData: null });
+  };
+
   return (
     <>
       <Container className="py-2">
@@ -36,12 +50,18 @@ export default function ProductCard() {
                     <span className="h3 mt-auto">Card title</span>
                   </Card.Title>
                   <Card.Title>Price: 20,000,000 VNĐ</Card.Title>
-                  {/* <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text> */}
-                  <Button variant="primary" className="mx-auto shadow">
+                  <Button
+                    variant="primary"
+                    className="mx-auto shadow"
+                    onClick={() =>
+                      handleShowModal({
+                        title: "Product Title",
+                        price: "20,000,000",
+                        productId: "123",
+                        image: image,
+                      })
+                    }
+                  >
                     Add to Cart
                   </Button>
                 </Card.Body>
@@ -50,6 +70,12 @@ export default function ProductCard() {
           ))}
         </Row>
       </Container>
+
+      <ProductModal
+        show={modalShow.show}
+        onHide={handleCloseModal}
+        productData={modalShow.productData}
+      />
     </>
   );
 }
