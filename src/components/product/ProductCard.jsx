@@ -11,6 +11,7 @@ import image3 from "../../img/persian_1.jpg";
 import image4 from "../../img/ragdoll_1.jpg";
 import image5 from "../../img/ragdoll_2.jpg";
 import image6 from "../../img/ragdoll_3.jpg";
+import './productCard.css'
 
 import SearchBar from "../search-bar/SearchBar";
 
@@ -19,12 +20,12 @@ export default function ProductCard() {
   return (
     <>
       <Container className="py-2">
-        <h1 className="m-4">Our Products</h1>
+        <h1 className="m-4"><span className="h1">Our Products</span></h1>
         <SearchBar />
         <Row xs={1} md={3} className="g-4 m-4">
           {images.map((image, idx) => (
             <Col key={idx} className="mb-4">
-              <Card className="h-100 shadow ">
+              <Card className="h-100 shadow">
                 <Card.Img
                   variant="top"
                   src={image}
@@ -35,15 +36,15 @@ export default function ProductCard() {
                   <Card.Title className="mt-auto">
                     <span className="h3 mt-auto">Card title</span>
                   </Card.Title>
-                  <Card.Title>Price: 20,000,000 VNĐ</Card.Title>
+                  <Card.Title> <span className="custom-h4">20,000,000 VNĐ</span> </Card.Title>
                   {/* <Card.Text>
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
                     little bit longer.
                   </Card.Text> */}
-                  <Button variant="primary" className="mx-auto shadow">
-                    Add to Cart
-                  </Button>
+                  <button className="custom-button">
+                    <span className="p">Add to Cart</span>
+                  </button>
                 </Card.Body>
               </Card>
             </Col>

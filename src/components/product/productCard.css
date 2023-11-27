@@ -1,10 +1,11 @@
-
-.h1, .h3, .h4, .p{
-    font-family: 'Noto Serif', serif;
-    font-family: 'Nunito', sans-serif;
+.custom-h4{
+    font-weight: 200;
+    font-size: 16px;
 }
 
-.h1{
-    font-family: 'Noto Serif', serif;
-    font-family: 'Nunito', sans-serif;
+.custom-button{
+    background-color: #57557d;
+    color: whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }

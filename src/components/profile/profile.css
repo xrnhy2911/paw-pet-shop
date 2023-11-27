@@ -1,0 +1,31 @@
+.profile-css{
+    margin: 10% 13%;
+}
+
+.wallpaper-holder {
+    /* height: 250px;
+    background-color: #bbb;
+    border-radius: 5px;
+    display: inline-block;
+    left: 10%;
+    right: 10%;
+    margin-bottom: 10px; */
+    background-color: #bbb;
+    height: 250px;
+
+}
+
+/* .dot {
+    height: 200px;
+    width: 200px;
+    background-color: #ccc;
+    border-radius: 50%;
+    top: 40%;
+    display: grid;
+    position: absolute;
+    left: 15%;
+}
+
+.info-frame{
+    display: grid;
+} */
