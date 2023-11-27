@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import ProductModal from "../modal/ProductModal";
 
@@ -12,6 +12,7 @@ import image3 from "../../img/persian_1.jpg";
 import image4 from "../../img/ragdoll_1.jpg";
 import image5 from "../../img/ragdoll_2.jpg";
 import image6 from "../../img/ragdoll_3.jpg";
+import './productCard.css'
 
 import SearchBar from "../search-bar/SearchBar";
 
@@ -50,8 +51,9 @@ export default function ProductCard() {
                     <span className="h3 mt-auto">Card title</span>
                   </Card.Title>
                   <Card.Title>Price: 20,000,000 VNĐ</Card.Title>
-                  <Button
-                    variant="primary"
+                  <button
+                    // variant="primary"
+                    id="custom-button"
                     className="mx-auto shadow"
                     onClick={() =>
                       handleShowModal({
@@ -63,7 +65,7 @@ export default function ProductCard() {
                     }
                   >
                     Add to Cart
-                  </Button>
+                  </button>
                 </Card.Body>
               </Card>
             </Col>

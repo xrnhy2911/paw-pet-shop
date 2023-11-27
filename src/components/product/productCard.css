@@ -3,9 +3,15 @@
     font-size: 16px;
 }
 
-.custom-button{
+#custom-button{
     background-color: #57557d;
     color: whitesmoke;
     border: 1px solid transparent;
     border-radius: 5px;
+    width: 100%;
+}
+
+#custom-button:hover{
+    background-color: transparent;
+    color: #57557d;
 }
