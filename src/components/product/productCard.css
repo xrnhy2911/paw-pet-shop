@@ -9,9 +9,12 @@
     border: 1px solid transparent;
     border-radius: 5px;
     width: 100%;
+    font-size: 16px;
 }
 
 #custom-button:hover{
     background-color: transparent;
     color: #57557d;
+    border: 1px solid #57557d;
+    border-radius: 5px;
 }
