@@ -2,8 +2,10 @@ import React from "react";
 import chaBong from "../../img/chabongimg.jpg";
 // import chaBong1 from "../../img/chabong.jpg"
 import "./home.css";
+import Reactslider from "../slider/reactslider";
 
 export default function Home() {
+  
   return (
     <>
       <div className="wrapper">
@@ -16,8 +18,8 @@ export default function Home() {
             YOUR BEST <br /> FRIEND DESERVES <br /> THE BEST MEAL
           </h4>
         </div>
-        <div className="home-content">
-
+        <div className="content">
+            <Reactslider/>
         </div>
       </div>
     </>
