@@ -2,7 +2,7 @@
 .wrapper {
     padding: relative;
     margin: 0;
-    background-color:#E8E6E6 ;
+    background-color: #E8E6E6;
     /* margin-top: 98px; */
 }
 /* .home-img{
@@ -42,7 +42,6 @@
     from { 
         opacity: calc(200%);
         margin: 0 15%;
-        
     }
     to { 
         margin: 0;
@@ -56,6 +55,102 @@
     animation-range-start: contain;
     animation-range-end: cover;
 }
+
+@media only screen and (max-width:500px) {
+    .store-quote {
+        position: absolute;
+        top: 25%;
+        padding-left: 16%;
+    }
+
+    .store-quote>h4 {
+        text-align: left;
+        color: #f8a075;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width: 600px) {
+    .store-quote {
+        position: absolute;
+        top: 25%;
+        padding-left: 16%;
+    }
+
+    .store-quote>h4 {
+        text-align: left;
+        color: #f8a075;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 800px) {
+    .store-quote {
+        position: absolute;
+        top: 29%;
+        padding-left: 16%;
+    }
+
+    .store-quote>h4 {
+        text-align: left;
+        color: #f8a075;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .store-quote {
+        position: absolute;
+        top: 35%;
+        padding-left: 16%;
+    }
+
+    .store-quote>h4 {
+        text-align: left;
+        color: #f8a075;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .store-quote {
+        position: absolute;
+        top: 40%;
+        padding-left: 16%;
+    }
+
+    .store-quote>h4 {
+        text-align: left;
+        color: #f8a075;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+    }
+}
+/* 
+@media(max-width:736px) {
+    .store-quote {
+        position: absolute;
+        top: 25%;
+        padding-left: 16%;
+    }
+
+    .store-quote>h4 {
+        text-align: left;
+        color: #f8a075;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Shadows Into Light', cursive;
+    }
+} */
 
 /* -------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------- */
