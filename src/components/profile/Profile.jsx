@@ -7,7 +7,7 @@ const Profile = () => {
         <div className="profile-css">
             <section className="profile">
                 <header className="header">
-                    <div className="details">                        
+                    <div className="details">
                         <img src={theImg} alt="" className="profile-pic" />
                         <h1 className="heading">Claire Doe</h1>
                         <div className="location">
@@ -30,10 +30,20 @@ const Profile = () => {
                     </div>
                 </header>
                 <div className="proflie-content">
-                        <h2 className="heading">About Me</h2>
+                    <div>
+                        <h2>Biography</h2>
                         <p>
                             I am a software engineer who loves to learn new things. I have a passion for coding and I love to build things.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit magnam, dignissimos totam ea est modi officiis, adipisci ipsa incidunt voluptatibus voluptas quod asperiores. Ullam id, repellat vitae tenetur deleniti facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi libero rem a reprehenderit delectus, neque dolore ullam. Distinctio modi nam et sequi reprehenderit unde nobis tenetur minus veniam vero!
                         </p>
+                    </div>
+                    <div>
+                        <h2>Profile</h2>
+                        <p>
+                            Join date: 11th 14, 2023
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>

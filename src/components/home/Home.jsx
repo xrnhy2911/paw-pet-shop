@@ -16,7 +16,7 @@ export default function Home() {
             YOUR BEST <br /> FRIEND DESERVES <br /> THE BEST MEAL
           </h4>
         </div>
-        <div className="content">
+        <div className="home-content">
 
         </div>
       </div>
