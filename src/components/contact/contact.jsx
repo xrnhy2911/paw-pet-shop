@@ -5,7 +5,6 @@ import chabong from "../../img/chabongUs.jpg";
 export default function Contact() {
     return(
         <div className="contact">
-            {/* <h1>Contact Us</h1> */}
             <div className="sb_contact"> {/* container */}
                 <div className="sb_contact-link"> {/* main */}
                     <div className="sb_contact-link-div"> {/* content */}

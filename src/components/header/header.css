@@ -1,10 +1,15 @@
 .custom-header,
 .custom-header * {
-    background-color: #f9a378;
     color: #e21c21 !important;
     font-weight: 700;
     font-size: 20px;
     font-family: 'Nunito Sans', sans-serif;
+}
+
+.custom-header {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to top, #f9a378, #ffc0a0);
+
 }
 
 #my-brand {

@@ -4,19 +4,23 @@
     margin: 0;
     /* margin-top: 98px; */
 }
+/* .home-img{
+    margin: 0 10%;
+    margin-bottom: 20%;
+} */
 
-.wrapper>img {
+.home-img > img {
     width: 100%;
     height: 100%;
 }
 
-.content {
+.store-quote {
     position: absolute;
     top: 47%;
-    padding-left: 13%;
+    padding-left: 16%;
 }
 
-.content>h4 {
+.store-quote>h4 {
     text-align: left;
     color: #f8a075;
     font-size: 37px;
@@ -26,9 +30,33 @@
 
 
 @media screen and (max-width:850px) {
-    .content {
+    .store-quote {
         top: 25%;
         padding-left: 5%;
     }
 
 }
+
+@keyframes zoom_in-animation {
+    from { 
+        opacity: calc(200%);
+        margin: 0 15%;
+        
+    }
+    to { 
+        margin: 0;
+        opacity: calc(-10%);
+    }
+}
+
+.home-img {
+    animation: zoom_in-animation linear;
+    animation-timeline: view(block);
+    animation-range-start: contain;
+    animation-range-end: cover;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
