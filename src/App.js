@@ -1,4 +1,5 @@
 import './App.css';
+import Slider from './components/slider/reactslider';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
@@ -6,6 +7,7 @@ import Home from './components/home/Home'
 import Header from './components/header/Header';
 import Login from './components/login/Login'
 import ProductCard from './components/product/ProductCard';
+import Profile from './components/profile/Profile'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/products" element={<ProductCard />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/slider" element={<Slider />} />
+          <Route path="/profile" element={<Profile />} />
           {/* <Route path="/tvshows" element={<Tvshows />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/moviesdetail" element={<MoviesDetail />} /> */}

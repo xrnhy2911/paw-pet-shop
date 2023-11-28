@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -39,14 +38,14 @@ export default function ProductModal(props) {
                 <h3>{productData.title}</h3>
                 <h4 className="mt-2">Price: {productData.price} VNĐ</h4>
                 <p className="mt-2">Mã Sản phẩm: {productData.productId}</p>
-                <Button
+                <button id="custom-button"
                   variant="primary"
                   className="mt-2"
                   style={{ width: "100%" }}
                   onClick={() => console.log("Add to Cart clicked")}
                 >
                   Add to Cart
-                </Button>
+                </button>
                 <p style={{ textAlign: "right", marginTop: "10px" }}>
                   <a href="/product-detail">Xem thêm chi tiết</a>
                 </p>
