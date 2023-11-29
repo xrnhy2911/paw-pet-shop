@@ -8,6 +8,7 @@ import Header from './components/header/Header';
 import Login from './components/login/Login'
 import ProductCard from './components/product/ProductCard';
 import Profile from './components/profile/Profile'
+import ProductDetail from './components/product-detail/ProductDetail';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/slider" element={<Slider />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/product-detail/:productId" element={<ProductDetail />} />
           {/* <Route path="/tvshows" element={<Tvshows />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/moviesdetail" element={<MoviesDetail />} /> */}
