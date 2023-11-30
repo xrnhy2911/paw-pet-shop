@@ -97,7 +97,7 @@ export default function ProductCard() {
                     className="mx-auto shadow"
                     onClick={() => handleShowModal(productData)}
                   >
-                    Add to Cart
+                    Preview
                   </button>
                 </Card.Body>
               </Card>

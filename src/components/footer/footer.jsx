@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="sb_footer">
         <div className="sb_footer-link">
           <div className="sb_footer-link_div">
-            <h4>MENU</h4>
+            <h4>COMPANY</h4>
             <a href="/home">
               <p>HOME</p>
             </a>
@@ -28,7 +28,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="sb_footer-link_div">
-            <h4>INFO</h4>
+            <h4>GET HELP</h4>
             <a href="/faq">
               <p>FAQ</p>
             </a>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
 
           <div className="sb_footer-link_div">
-            <h4>FOLLOW OUR</h4>
+            <h4>FOLLOW US</h4>
             <div className="socialmedia">
               <p>
                 <img className="social-media-image" src={insta} alt="" srcset="" />

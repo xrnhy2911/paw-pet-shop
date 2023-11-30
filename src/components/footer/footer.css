@@ -48,8 +48,18 @@
     text-align: left;
     color: #45344d;
     font-family: 'Nunito Sans', sans-serif;
-
 }
+
+/* .sb_footer-link_div h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: black;
+    height: 2px;
+    box-sizing: border-box;
+ 
+} */
 
 
 .sb_footer-link_div a p {
