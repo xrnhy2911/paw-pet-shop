@@ -17,11 +17,14 @@ export default function Home() {
             YOUR BEST <br /> FRIEND DESERVES <br /> THE BEST MEAL
           </h4>
         </div>
-        <h1 className="home-h1">BEST SELLERS</h1>
+        <div className="home-frame-2">
+          <h2 className="home-h2">BEST SELLERS</h2>
 
-        <div className="home-content">
-          <Reactslider />
+          <div className="home-content">
+            <Reactslider />
+          </div>
         </div>
+
       </div>
     </>
   );

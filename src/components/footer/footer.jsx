@@ -9,7 +9,7 @@ export default function Footer() {
     <div className="footer">
       <div className="sb_footer">
         <div className="sb_footer-link">
-          <div className="sb_footer-link_div">
+          <div className="sb_footer-link_div" style={{ fontWeight: 700 }}>
             <h4>COMPANY</h4>
             <a href="/home">
               <p>HOME</p>
