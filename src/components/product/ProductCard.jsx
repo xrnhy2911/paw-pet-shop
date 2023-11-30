@@ -1,20 +1,60 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 // import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import ProductModal from "../modal/ProductModal";
-
+import ProductDetail from "../product-detail/ProductDetail";
 import image1 from "../../img/munchkin_cat.jpg";
 import image2 from "../../img/birman_1.jpg";
 import image3 from "../../img/persian_1.jpg";
 import image4 from "../../img/ragdoll_1.jpg";
 import image5 from "../../img/ragdoll_2.jpg";
 import image6 from "../../img/ragdoll_3.jpg";
-import './productCard.css'
+import "./productCard.css";
 
 import SearchBar from "../search-bar/SearchBar";
+
+const productDataList = [
+  {
+    title: "Munchkin Cat",
+    price: "20,000,000",
+    image: image1,
+    productId: "1",
+  },
+  {
+    title: "Birman Cat",
+    price: "25,000,000",
+    image: image2,
+    productId: "2",
+  },
+  {
+    title: "Persian Cat",
+    price: "30,000,000",
+    image: image3,
+    productId: "3",
+  },
+  {
+    title: "Ragdoll Cat",
+    price: "35,000,000",
+    image: image4,
+    productId: "4",
+  },
+  {
+    title: "Ragdoll Cat 2",
+    price: "40,000,000",
+    image: image5,
+    productId: "5",
+  },
+  {
+    title: "Ragdoll Cat 3",
+    price: "45,000,000",
+    image: image6,
+    productId: "6",
+  },
+];
 
 export default function ProductCard() {
   const [modalShow, setModalShow] = useState({
@@ -31,40 +71,33 @@ export default function ProductCard() {
     setModalShow({ show: false, productData: null });
   };
 
+  const selectedProduct = modalShow.productData;
   return (
     <>
       <Container className="py-2">
         <h1 className="m-4">Our Products</h1>
         <SearchBar />
         <Row xs={1} md={3} className="g-4 m-4">
-          {images.map((image, idx) => (
+          {productDataList.map((productData, idx) => (
             <Col key={idx} className="mb-4">
               <Card className="h-100 shadow ">
                 <Card.Img
                   variant="top"
-                  src={image}
+                  src={productData.image}
                   style={{ maxHeight: "355px" }}
                   className="custom-product-image"
                 />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="mt-auto">
-                    <span className="h3 mt-auto">Card title</span>
+                    <span className="h3 mt-auto">{productData.title}</span>
                   </Card.Title>
-                  <Card.Title>Price: 20,000,000 VNĐ</Card.Title>
+                  <Card.Title>Price: {productData.price}</Card.Title>
                   <button
-                    // variant="primary"
                     id="custom-button"
                     className="mx-auto shadow"
-                    onClick={() =>
-                      handleShowModal({
-                        title: "Product Title",
-                        price: "20,000,000",
-                        productId: "123",
-                        image: image,
-                      })
-                    }
+                    onClick={() => handleShowModal(productData)}
                   >
-                    Add to Cart
+                    Preview
                   </button>
                 </Card.Body>
               </Card>
@@ -77,7 +110,12 @@ export default function ProductCard() {
         show={modalShow.show}
         onHide={handleCloseModal}
         productData={modalShow.productData}
+        onSelectProduct={(productData) =>
+          setModalShow({ show: false, productData })
+        }
       />
+
+      {selectedProduct && <ProductDetail productDetails={selectedProduct} />}
     </>
   );
 }

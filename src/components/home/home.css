@@ -38,7 +38,7 @@
 
 }
 
-@keyframes zoom_in-animation {
+@keyframes zoom_in-home-animation {
     from { 
         opacity: calc(200%);
         margin: 0 15%;
@@ -50,7 +50,7 @@
 }
 
 .home-img {
-    animation: zoom_in-animation linear;
+    animation: zoom_in-home-animation linear;
     animation-timeline: view(block);
     animation-range-start: contain;
     animation-range-end: cover;

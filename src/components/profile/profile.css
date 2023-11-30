@@ -1,34 +1,20 @@
 .profile-css{
+  margin: 10% 0;
+}
+
+.header{
     margin: 10% 13%;
 }
 
+.proflie-content{
+  margin: 0 13%;
+}
+
 .wallpaper-holder {
-    /* height: 250px;
-    background-color: #bbb;
-    border-radius: 5px;
-    display: inline-block;
-    left: 10%;
-    right: 10%;
-    margin-bottom: 10px; */
     background-color: #bbb;
     height: 250px;
 
 }
-
-/* .dot {
-    height: 200px;
-    width: 200px;
-    background-color: #ccc;
-    border-radius: 50%;
-    top: 40%;
-    display: grid;
-    position: absolute;
-    left: 15%;
-}
-
-.info-frame{
-    display: grid;
-} */
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
@@ -82,4 +68,32 @@ background: linear-gradient(to bottom, #efbaba, #3200ba61);
   font-size: 1.3rem;
   margin: 1rem 0;
   color: #ba000081;
+}
+
+
+@keyframes zoom_in-profile-animation {
+  from { 
+    margin: 5% 15%;
+
+  }
+  to { 
+      margin: 10% 5%;
+  }
+}
+
+.header {
+  animation: zoom_in-profile-animation linear;
+  animation-timeline: view(block);
+  animation-range-start: cover + 20px;
+  animation-range-end: cover;
+}
+
+.proflie-content{
+  text-align: left;
+
+}
+
+.proflie-content > div{
+  margin: 20px 0;
+  border-bottom: 2px dashed burlywood;
 }
