@@ -65,7 +65,7 @@ export default function Header() {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="mx-2">
+              <Nav.Link className="mx-2" as={Link} to="/cart">
                 <BsCart3 />
                 {/* Replace with your actual shopping cart component */}
               </Nav.Link>
