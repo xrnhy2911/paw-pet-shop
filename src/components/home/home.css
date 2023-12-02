@@ -186,26 +186,26 @@
   }
    */
   .hover-button {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    position: absolute;
-    bottom: 10%;
-    right: 45%;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #57557d;
-    border: 1.5px solid #57557d;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0;
-  visibility: hidden; /* Initially hidden */
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Slow transition */
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 700 !important;
+    position: absolute !important;
+    bottom: 10% !important;
+    right: 45% !important;
+    transform: translateY(-50%) !important;
+    padding: 10px 20px !important;
+    background-color: transparent !important;
+    color: #57557d !important;
+    border: 1.5px solid #57557d !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    opacity: 0 !important;
+  visibility: hidden !important; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out !important; /* Slow transition */
 }
 
 .banner-container:hover .hover-button, .banner-container:hover .hover-story{
-  opacity: 1;
-  visibility: visible; /* Make it visible on hover */
+  opacity: 1 !important;
+  visibility: visible !important; /* Make it visible on hover */
   
 }
 
@@ -215,10 +215,10 @@
 }
 
 .hover-button:hover{
-    background-color: #a9b8d7;
-    color: white;
-    border: 1.5px solid white;
-
+    background-color: #a9b8d7 !important;
+    color: white !important;
+    border: 1.5px solid white !important;
+    transition: opacity 0.5s ease-in-out !important; /* Slow transition */
 }
 
 .banner-container {
