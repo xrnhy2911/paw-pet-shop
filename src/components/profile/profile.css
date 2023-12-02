@@ -16,6 +16,8 @@
 
 }
 
+
+
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
 body {
@@ -25,7 +27,7 @@ body {
 
 .header {
   min-height: 60vh;
-background: linear-gradient(to bottom, #efbaba, #3200ba61);
+background: linear-gradient(to bottom,#FFBE88, #E7B7C8);
   color: white;
   display: flex;
   align-items: center;
@@ -48,6 +50,7 @@ background: linear-gradient(to bottom, #efbaba, #3200ba61);
 .location p {
   display: inline-block;
   color: #ffffff;
+  font-size: 20px;
 }
 
 /* .location svg {
@@ -56,18 +59,20 @@ background: linear-gradient(to bottom, #efbaba, #3200ba61);
 
 .stats {
   display: flex;
+  justify-content: space-around;
 }
 
 .stats .col-4,  .stats p{
-  width: 10rem;
+  width: 18rem;
   text-align: center;
+  font-size: 20px;
 }
 
 .heading {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin: 1rem 0;
-  color: #ba000081;
+  color: #dc6262;
 }
 
 
