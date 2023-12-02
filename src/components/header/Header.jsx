@@ -21,8 +21,8 @@ export default function Header() {
         collapseOnSelect
       >
         <Container fluid className="custom-header2">
-          <Navbar.Brand href="#" id="my-brand">
-          { <img src={logo} alt="" srcset="" />}
+          <Navbar.Brand href="/home" id="my-brand">
+            {<img src={logo} alt="" srcset="" />}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -65,7 +65,7 @@ export default function Header() {
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="#action5"
-                 
+
                 >
                   Something else here
                 </NavDropdown.Item>

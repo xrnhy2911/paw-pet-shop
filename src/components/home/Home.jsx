@@ -34,13 +34,14 @@ export default function Home() {
                 Sneaks into a café <br /> Sniffs foods on display <br /> Sees a plate of pâté <br /> It’s a lucky day</p>
 
             </div>
-            <Button
-              className="hover-button"
-              as={Link}
-              to={"/products"}
-            >
-              SHOP ALL
-            </Button>
+            <a href="/products">
+              <button
+                className="hover-button"
+              >
+                SHOP ALL
+              </button>
+            </a>
+
 
 
           </div>
