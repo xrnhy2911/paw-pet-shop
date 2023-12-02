@@ -9,7 +9,10 @@
 .custom-header {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
     background: linear-gradient(to top, #f9a378, #ffc0a0);
+}
 
+.custom-header2 img{
+    width: 180px !important;
 }
 
 #my-brand {

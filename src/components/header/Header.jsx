@@ -6,6 +6,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import "./header.css";
 import { BsCart3, BsPerson } from "react-icons/bs";
+import logo from "../../img/logo.svg";
+
 
 export default function Header() {
   return (
@@ -20,7 +22,7 @@ export default function Header() {
       >
         <Container fluid className="custom-header2">
           <Navbar.Brand href="#" id="my-brand">
-            PawPet <br /> Shop
+          { <img src={logo} alt="" srcset="" />}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -30,14 +32,14 @@ export default function Header() {
               navbarScroll
             >
               <Nav.Link as={Link} className="mx-2" to={"/home"}>
-                Home
+                HOME
               </Nav.Link>
               <Nav.Link
                 as={Link}
                 to={"/products"}
                 className="custom-sub-nav mx-2"
               >
-                Products
+                PRODUCTS
               </Nav.Link>
               <NavDropdown
                 title="Link"
@@ -49,13 +51,13 @@ export default function Header() {
                   className="custom-dropdown-item"
                   href="/about"
                 >
-                  About
+                  ABOUT
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="/contact"
                 >
-                  Contact
+                  CONTACT
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
