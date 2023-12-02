@@ -19,7 +19,7 @@ export default function Header() {
         collapseOnSelect
       >
         <Container fluid className="custom-header2">
-          <Navbar.Brand href="#" id="my-brand">
+          <Navbar.Brand href="/" id="my-brand">
             PawPet <br /> Shop
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
