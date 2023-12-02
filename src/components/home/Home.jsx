@@ -22,18 +22,21 @@ export default function Home() {
           className="home-frame-1"
         >
           <h1 className="home-h1">Story Teller</h1>
-          <div className="banner-container"      >
+          <div className="banner-container" >
             <img src={chaBong1} alt="Banner" className="banner-image" />
-            <div>
-              <p>There’s a cat named Caté <br /> Seeking for pâté <br /> Loves to have a treat <br /> but hates to pay for it <br />
+            <div className='hover-story'>
+              <p>There’s a cat named Caté <br /> Seeking for the pâté <br /> Loves to have a treat <br /> but hates to pay for it <br />
 
                 Sneaks into a café <br /> Sniffs the food on display <br /> Sees a plate of pâté <br /> It’s a lucky day</p>
-            </div>
 
-            <button className="hover-button"
+            </div>
+            <button
+              className="hover-button"
             >
-              Shop Now
+              SHOP ALL
             </button>
+
+
           </div>
         </div>
         <div className="home-frame-2">
