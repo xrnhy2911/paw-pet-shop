@@ -31,13 +31,13 @@ export default function Header() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link as={Link} className="mx-2" to={"/home"}>
+              <Nav.Link as={Link} className="mx-3 mt-3 " to={"/home"}>
                 HOME
               </Nav.Link>
               <Nav.Link
                 as={Link}
                 to={"/products"}
-                className="custom-sub-nav mx-2"
+                className="custom-sub-nav mx-3 mt-3"
               >
                 PRODUCTS
               </Nav.Link>
@@ -45,17 +45,19 @@ export default function Header() {
                 title="Link"
                 id="navbarScrollingDropdown"
                 align={"end"}
-                className="custom-sub-nav"
+                className="custom-sub-nav mt-3 mx-3"
               >
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="/about"
+                  style={{ fontSize: "16px", fontWeight: "700" }}
                 >
                   ABOUT
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="/contact"
+                  style={{ fontSize: "16px", fontWeight: "700" }}
                 >
                   CONTACT
                 </NavDropdown.Item>
@@ -63,16 +65,17 @@ export default function Header() {
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="#action5"
+                 
                 >
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="mx-2" as={Link} to="/cart">
+              <Nav.Link className="mx-1 mt-3" as={Link} to="/cart">
                 <BsCart3 />
                 {/* Replace with your actual shopping cart component */}
               </Nav.Link>
               <NavDropdown
-                className="mx-2"
+                className="mx-1 mt-3"
                 title={<BsPerson />} // Use UserAvatar as the dropdown title
                 id="navbarScrollingDropdown"
                 align={"end"}
