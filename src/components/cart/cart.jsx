@@ -76,7 +76,7 @@ export default function Cart() {
               </span>
             </p>
             {/* <a href="/"></a> */}
-            <Link to={"/"}>Proceed to Checkout</Link>
+            <Link to={"/credit"}>Proceed to Checkout</Link>
           </div>
         </div>
       </div>
