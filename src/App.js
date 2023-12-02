@@ -1,4 +1,5 @@
 import './App.css';
+import Credit from './components/credit/credit';
 import Cart from './components/cart/cart';
 import Slider from './components/slider/reactslider';
 import About from './components/about/about';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/slider" element={<Slider />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/credit" element={<Credit />} />
           <Route path="/product-detail/:productId" element={<ProductDetail />} />
           {/* <Route path="/tvshows" element={<Tvshows />} />
           <Route path="/movies" element={<Movies />} />
