@@ -31,7 +31,7 @@ export default function Home() {
             <div className='hover-story'>
               <p>There’s a cat named Caté <br /> Seeking for the pâté <br /> Loves to have a treat <br /> ... hates to pay for it <br />
 
-                Sneaks into a café <br /> Sniffs foods on display <br /> Sees a plate of pâté <br /> It’s a lucky day</p>
+                Sneaks into a café <br /> Sniffs foods on display <br /> Sees a plate of pâté <br /> "It’s a lucky day..."</p>
 
             </div>
             <a href="/products">
