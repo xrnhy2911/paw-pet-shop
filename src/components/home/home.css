@@ -30,10 +30,12 @@
 }
 
 
-.home-h2{
+.home-h1{
     padding: 1rem 0;
     margin-top: 5%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
     color: #3d3b7e;
 }
 
@@ -43,6 +45,7 @@
     padding: 2rem 10% 2rem 10%;
     background-color: whitesmoke;
 }
+
 
 .home-frame-2{
     /* background-color: whitesmoke; */
@@ -59,7 +62,7 @@
 
 }
 
-@keyframes zoom_in-home-animation {
+@keyframes margin-home-animation {
     from { 
         opacity: calc(200%);
         margin: 0 15%;
@@ -70,8 +73,9 @@
     }
 }
 
+
 .home-img {
-    animation: zoom_in-home-animation linear;
+    animation: margin-home-animation linear;
     animation-timeline: view(block);
     animation-range-start: contain;
     animation-range-end: cover;
@@ -155,4 +159,59 @@
         font-weight: bold;
         font-family: 'Shadows Into Light', cursive;
     }
+}
+
+.home-frame-1 {
+    position: relative;
+    display: inline-block;
+     /* background-color: whitesmoke; */
+    /* padding: 10% 11%; */
+  }
+  
+  .banner-image {
+    width: 100%;
+    /* border-radius: 10px; */
+    /* height: auto; */
+    /* background-color: whitesmoke;
+    padding: 10% 11%; */
+  }
+  
+  .hover-button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(197, 197, 197, 0.345);
+    color: #424242;
+    border: 1.5px solid #424242;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Slow transition */
+}
+
+.banner-container:hover .hover-button {
+  opacity: 1;
+  visibility: visible; /* Make it visible on hover */
+}
+
+  .hover-button:hover{
+    background-color: #6464649b;
+    color: whitesmoke;
+    border: 1.5px solid whitesmoke;
+  }
+
+  @keyframes blur-home-animation {
+    from { 
+        filter: blur(20px);
+    }
+    to { 
+        filter: blur(0);
+    }
+}
+
+.banner-container{
+
 }

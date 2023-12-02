@@ -58,7 +58,7 @@ background: linear-gradient(to bottom, #efbaba, #3200ba61);
   display: flex;
 }
 
-.stats .col-4 {
+.stats .col-4,  .stats p{
   width: 10rem;
   text-align: center;
 }
