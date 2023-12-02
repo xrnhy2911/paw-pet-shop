@@ -6,6 +6,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import "./header.css";
 import { BsCart3, BsPerson } from "react-icons/bs";
+import logo from "../../img/logo.svg";
+
 
 export default function Header() {
   return (
@@ -20,7 +22,7 @@ export default function Header() {
       >
         <Container fluid className="custom-header2">
           <Navbar.Brand href="#" id="my-brand">
-            PawPet <br /> Shop
+          { <img src={logo} alt="" srcset="" />}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -29,48 +31,51 @@ export default function Header() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link as={Link} className="mx-2" to={"/home"}>
-                Home
+              <Nav.Link as={Link} className="mx-3 mt-3 " to={"/home"}>
+                HOME
               </Nav.Link>
               <Nav.Link
                 as={Link}
                 to={"/products"}
-                className="custom-sub-nav mx-2"
+                className="custom-sub-nav mx-3 mt-3"
               >
-                Products
+                PRODUCTS
               </Nav.Link>
               <NavDropdown
                 title="Link"
                 id="navbarScrollingDropdown"
                 align={"end"}
-                className="custom-sub-nav"
+                className="custom-sub-nav mt-3 mx-3"
               >
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="/about"
+                  style={{ fontSize: "16px", fontWeight: "700" }}
                 >
-                  About
+                  ABOUT
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="/contact"
+                  style={{ fontSize: "16px", fontWeight: "700" }}
                 >
-                  Contact
+                  CONTACT
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="#action5"
+                 
                 >
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="mx-2" as={Link} to="/cart">
+              <Nav.Link className="mx-1 mt-3" as={Link} to="/cart">
                 <BsCart3 />
                 {/* Replace with your actual shopping cart component */}
               </Nav.Link>
               <NavDropdown
-                className="mx-2"
+                className="mx-1 mt-3"
                 title={<BsPerson />} // Use UserAvatar as the dropdown title
                 id="navbarScrollingDropdown"
                 align={"end"}
