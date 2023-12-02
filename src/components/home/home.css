@@ -175,43 +175,75 @@
     /* background-color: whitesmoke;
     padding: 10% 11%; */
   }
-  
-  .hover-button {
+/* 
+  .hover-story{
     position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 79%;
+    top: 21%;
+    background-color: rgba(69, 69, 69, 0.141);
+    text-align: center;
+  }
+   */
+  .hover-button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10%;
+    right: 45%;
+    transform: translateY(-50%);
     padding: 10px 20px;
-    background-color: rgba(197, 197, 197, 0.345);
-    color: #424242;
-    border: 1.5px solid #424242;
+    background-color: transparent;
+    color: #57557d;
+    border: 1.5px solid #57557d;
     border-radius: 5px;
     cursor: pointer;
     opacity: 0;
   visibility: hidden; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Slow transition */
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Slow transition */
 }
 
-.banner-container:hover .hover-button {
+.banner-container:hover .hover-button, .banner-container:hover .hover-story{
   opacity: 1;
   visibility: visible; /* Make it visible on hover */
+  
 }
 
-  .hover-button:hover{
-    background-color: #6464649b;
-    color: whitesmoke;
-    border: 1.5px solid whitesmoke;
+.banner-container:hover{
+    filter: brightness(80%);
+    transition: filter 0.2s ease-in-out;
+}
+
+.hover-button:hover{
+    background-color: #a9b8d7;
+    color: white;
+    border: 1.5px solid white;
+    transition: 0.5s ease-in-out; /* Slow transition */
+}
+
+.banner-container {
+    position: relative;
+    filter: brightness(100%);
+
   }
-
-  @keyframes blur-home-animation {
-    from { 
-        filter: blur(20px);
-    }
-    to { 
-        filter: blur(0);
-    }
-}
-
-.banner-container{
-
-}
+  .hover-story p{
+    font-family: Yatra One;
+    color: #57557d;
+    font-size: larger;
+    /* opacity: calc(200%); */
+  }
+  .hover-story {
+    /* color: black;
+    background-color: #f8a175;
+    border: 2px dashed #c06132; */
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Slow transition */
+    /* background-color: rgb(255, 182, 127); */
+    padding: 20px 20px;
+  }
