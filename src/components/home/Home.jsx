@@ -38,7 +38,7 @@ export default function Home() {
               <button
                 className="hover-button"
               >
-                SHOP ALL
+                SHOP NOW
               </button>
             </a>
 

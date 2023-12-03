@@ -76,6 +76,8 @@ input {
 .btn:hover,
 button:hover {
     color: #302f51;
+    border: 1px solid #302f51 !important;
+    border-radius: 5px !important;
     transition: 0.5s ease;
 }
 
