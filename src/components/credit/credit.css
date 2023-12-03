@@ -47,7 +47,7 @@ section {
     color: white;
     line-height: 1.5;
     margin-bottom: 4px;
-    margin-right: 79%;
+    margin-right: 80%;
 }
 .credit-hd-description {
     font-size: 15px;
@@ -110,14 +110,14 @@ section {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    margin-right: 86%;
+    margin-right: 90%;
 }
 .credit-plan-price {
     font-weight: 600;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    margin-right: 69%;
+    margin-right: 76%;
 }
 .credit-plan-change {
     color: #3b82f6;
@@ -198,7 +198,7 @@ section {
     font-weight: 700;
     margin-bottom: 12px;
     line-height: 1.5;
-    margin-right: 63%;
+    margin-right: 65%;
 }
 .credit-method {
     display: flex;

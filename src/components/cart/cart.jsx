@@ -59,12 +59,12 @@ export default function Cart() {
 
           <p>
             <span>You Save</span>
-            <span>35.500</span>
+            <span>36.000</span>
           </p>
 
           <p>
             <span>Tax</span>
-            <span>25.000</span>
+            <span>0</span>
           </p>
           <div className="total">
             <p>
@@ -72,7 +72,7 @@ export default function Cart() {
                 <b>Total</b>
               </span>
               <span>
-                <b>345.500</b>
+                <b>324.000</b>
               </span>
             </p>
             {/* <a href="/"></a> */}
