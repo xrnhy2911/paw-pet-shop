@@ -11,6 +11,7 @@ import Login from './components/login/Login'
 import ProductCard from './components/product/ProductCard';
 import Profile from './components/profile/Profile'
 import ProductDetail from './components/product-detail/ProductDetail';
+import NotFound from './components/not-found/NotFound';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/credit" element={<Credit />} />
           <Route path="/product-detail/:productId" element={<ProductDetail />} />
+          <Route path="*" element={<NotFound />} />
           {/* <Route path="/tvshows" element={<Tvshows />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/moviesdetail" element={<MoviesDetail />} /> */}
