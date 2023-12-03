@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../credit/credit.css";
 import pay from "../../img/paypal.png";
 import stripe from "../../img/stripe.png";
@@ -6,6 +6,42 @@ import visa from "../../img/visa.png";
 import master from "../../img/mastercard.png";
 
 export default function Credit() {
+  const [formData, setFormData] = useState({
+    email: "",
+    cardNumber: "",
+    expiryDate: "",
+    cvv: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Check if any field is empty
+    const emptyFields = Object.entries(formData).filter(
+      ([field, value]) => value.trim() === ""
+    );
+
+    if (emptyFields.length > 0) {
+      const fieldNames = emptyFields.map(([field]) => field);
+      const errorMessage = `Please fill in the following field${
+        fieldNames.length > 1 ? "s" : ""
+      }: ${fieldNames.join(", ")}.`;
+
+      alert(errorMessage);
+    } else {
+      // Implement your payment logic here
+      alert("Payment submitted!");
+      window.location.reload();
+    }
+  };
   return (
     <section className="credit-section">
       <div className="container">
@@ -55,7 +91,7 @@ export default function Credit() {
           </div>
 
           <div className="credit-rignt">
-            <form action="" className="credit-form">
+            <form action="" className="credit-form" onSubmit={handleSubmit}>
               <h1 className="credit-title">Payment Details</h1>
               <div className="credit-method">
                 <input
@@ -105,6 +141,9 @@ export default function Credit() {
                   placeholder=" "
                   className="credit-form-control"
                   id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                 />
                 <label
                   for="email"
@@ -116,10 +155,13 @@ export default function Credit() {
 
               <div className="credit-form-gr">
                 <input
-                  type="text"
+                  type="number"
                   placeholder=" "
                   className="credit-form-control"
                   id="card-number"
+                  name="cardNumber"
+                  value={formData.cardNumber}
+                  onChange={handleInputChange}
                 />
                 <label
                   for="card-number"
@@ -136,6 +178,9 @@ export default function Credit() {
                     placeholder=" "
                     className="credit-form-control"
                     id="expiry-date"
+                    name="expiryDate"
+                    value={formData.expiryDate}
+                    onChange={handleInputChange}
                   />
                   <label
                     for="expiry-date"
@@ -151,6 +196,9 @@ export default function Credit() {
                     placeholder=" "
                     className="credit-form-control"
                     id="cvv"
+                    name="cvv"
+                    value={formData.cvv}
+                    onChange={handleInputChange}
                   />
                   <label
                     for="cvv"

@@ -8,6 +8,21 @@ import { productDataList as cartItems } from "../../data/data";
 import "./small-shopping-cart.css";
 const SmallShoppingCart = ({ show, onHide }) => {
   const navigate = useNavigate();
+
+  const calculateTotal = () => {
+    let total = 0;
+    cartItems.forEach((item) => {
+      const price = parseFloat(
+        item.price.replace(/\./g, "").replace(/,/g, ".")
+      ); // Convert string to number
+      total += price;
+    });
+    return total.toLocaleString("vi-VN", {
+      style: "currency",
+      currency: "VND",
+    });
+  };
+
   if (cartItems == null) {
     return null;
   }
@@ -30,7 +45,7 @@ const SmallShoppingCart = ({ show, onHide }) => {
             <Col xs={8}>
               <p className="mb-0">{item.title}</p>
               <p className="mb-0">
-                ${item.price}
+                {item.price} VNĐ
                 {/* x {item.quantity} */}
               </p>
               {/* <p className="mb-0">Quantity: {item.quantity}</p> */}
@@ -48,7 +63,9 @@ const SmallShoppingCart = ({ show, onHide }) => {
         <hr />
         <Row>
           <Col>
-            <p className="mb-0 font-weight-bold flex">Total: $XXX</p>
+            <p className="mb-0 font-weight-bold flex">
+              Total: {calculateTotal()}
+            </p>
           </Col>
         </Row>
       </Modal.Body>
