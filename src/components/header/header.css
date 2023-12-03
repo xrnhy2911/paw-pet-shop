@@ -33,6 +33,10 @@
     color: rgb(235, 230, 230) !important;
 }
 
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px #f88d58 !important;
+}
+
 /* #custom-search {
     background-color: white;
 }

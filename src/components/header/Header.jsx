@@ -8,7 +8,6 @@ import "./header.css";
 import { BsCart3, BsPerson } from "react-icons/bs";
 import logo from "../../img/logo.svg";
 
-
 export default function Header() {
   return (
     <>
@@ -65,7 +64,6 @@ export default function Header() {
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="#action5"
-
                 >
                   Something else here
                 </NavDropdown.Item>

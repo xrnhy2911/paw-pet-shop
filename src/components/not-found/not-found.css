@@ -1,0 +1,44 @@
+.not-found {
+    background-image: url("../../img/not-found.png");
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff4bb;
+    background-position: center right;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.flex {
+    text-align: left;
+    /* Căn giữa nội dung trong container flex */
+    font-size: 30px;
+    color: #ca43d1;
+    margin-left: 8%;
+}
+
+.link-home {
+    /* Thêm các kiểu CSS cho link nếu cần */
+    margin-top: 10px;
+    /* Điều chỉnh margin cho khoảng cách giữa p và link */
+}
+
+a.link-home {
+    color: #e870ee;
+}
+
+@media screen and (max-width:550px) {
+    .flex p {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .flex {
+        text-align: center;
+
+    }
+
+}
