@@ -3,9 +3,11 @@ import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import { useNavigate } from "react-router-dom";
 import { productDataList as cartItems } from "../../data/data";
 import "./small-shopping-cart.css";
 const SmallShoppingCart = ({ show, onHide }) => {
+  const navigate = useNavigate();
   if (cartItems == null) {
     return null;
   }
@@ -38,7 +40,7 @@ const SmallShoppingCart = ({ show, onHide }) => {
                 style={{ cursor: "pointer" }}
                 onClick={() => console.log("Remove item")}
               >
-                &#10006;
+                <i class="custom-close-btn fa-solid fa-circle-xmark"></i>
               </span>
             </Col>
           </Row>
@@ -56,7 +58,7 @@ const SmallShoppingCart = ({ show, onHide }) => {
             <button
               id="custom-button"
               className="p-2"
-              onClick={() => console.log("View In Detail clicked")}
+              onClick={() => navigate(`/cart`)}
               block
             >
               View In Detail
