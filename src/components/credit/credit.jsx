@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../credit/credit.css";
 import pay from "../../img/paypal.png";
 import stripe from "../../img/stripe.png";
@@ -6,6 +7,7 @@ import visa from "../../img/visa.png";
 import master from "../../img/mastercard.png";
 
 export default function Credit() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     cardNumber: "",
@@ -39,7 +41,7 @@ export default function Credit() {
     } else {
       // Implement your payment logic here
       alert("Payment submitted!");
-      window.location.reload();
+      navigate("/products");
     }
   };
   return (
