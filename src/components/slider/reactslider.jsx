@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import "./slider.css";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
-
 const sliderClick = (slider) => {
-    alert("hello world");
+    window.location.href = '/product-detail/11';
 }
 const slides = [
     {
@@ -87,7 +86,7 @@ class reactslider extends Component {
                         {
                             slides.map((slide, index) => {
                                 return (
-                                    <div className="slider-card" key={index} onClick={slide.clickEvent} >
+                                    <div className="slider-card" key={index} onClick={() => sliderClick(`/product-detail/11`)} >
                                         <div className="slider-card-img" style={{ backgroundImage: `url(${slide.image})`, backgroundSize: "cover" }} ></div>
                                         <p className="slider-card-title">{slide.title}</p>
                                         <p className="slider-card-price">{slide.price}</p>

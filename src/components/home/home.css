@@ -111,6 +111,13 @@
         font-weight: bold;
         font-family: 'Shadows Into Light', cursive;
     }
+    .hover-story{
+        position: absolute;
+        font-size: 10px;
+    }
+    .hover-button {
+        margin: 10%;
+    }
 }
 
 @media only screen and (min-width:600px) and (max-width: 800px) {
@@ -127,6 +134,10 @@
         font-weight: bold;
         font-family: 'Shadows Into Light', cursive;
     }
+    
+    .hover-story{
+        font-size: 10px;
+    }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
@@ -142,6 +153,9 @@
         font-size: 25px;
         font-weight: bold;
         font-family: 'Shadows Into Light', cursive;
+    }
+    .hover-story{
+        font-size: 12px;
     }
 }
 
