@@ -16,6 +16,8 @@ export default function ProductCard() {
     show: false,
     productData: null,
   });
+  const [visibleProducts, setVisibleProducts] = useState(6); // Số lượng sản phẩm muốn hiển thị ban đầu
+  const productsToShow = productDataList.slice(0, visibleProducts);
 
   const handleShowModal = (productData) => {
     setModalShow({ show: true, productData: productData });
@@ -24,13 +26,17 @@ export default function ProductCard() {
   const handleCloseModal = () => {
     setModalShow({ show: false, productData: null });
   };
+
+  const handleShowMore = () => {
+    setVisibleProducts((prev) => prev + 6); // Tăng số lượng sản phẩm khi bấm nút "Xem thêm"
+  };
   return (
     <>
       <Container className="py-2">
         <h1 className="m-4">Our Products</h1>
         <SearchBar />
         <Row xs={1} md={3} className="g-4 m-4">
-          {productDataList.map((productData, idx) => (
+          {productsToShow.map((productData, idx) => (
             <Col key={idx} className="mb-4">
               <Card className="h-100 shadow ">
                 <Card.Img
@@ -56,6 +62,17 @@ export default function ProductCard() {
             </Col>
           ))}
         </Row>
+        {visibleProducts < productDataList.length && (
+          <div className="text-center mt-3">
+            <button
+              id="custom-button3"
+              className="btn "
+              onClick={handleShowMore}
+            >
+              Xem thêm
+            </button>
+          </div>
+        )}
       </Container>
 
       <ProductModal
