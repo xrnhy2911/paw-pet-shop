@@ -48,35 +48,35 @@ export default function Cart() {
 
         <div className="cart-total">
           <p>
-            <span>Subtotal</span>
+            <span>Tổng Tiền</span>
             <span>360.000</span>
           </p>
 
           <p>
-            <span>Number of Items</span>
+            <span>Số Sản Phẩm</span>
             <span>2</span>
           </p>
 
           <p>
-            <span>You Save</span>
+            <span>Tiết Kiệm</span>
             <span>36.000</span>
           </p>
 
           <p>
-            <span>Tax</span>
+            <span>Thuế</span>
             <span>0</span>
           </p>
           <div className="total">
             <p>
               <span>
-                <b>Total</b>
+                <b>Thành Tiền </b>
               </span>
               <span>
                 <b>324.000</b>
               </span>
             </p>
             {/* <a href="/"></a> */}
-            <Link to={"/credit"}>Proceed to Checkout</Link>
+            <Link to={"/credit"}>Tiến Hành Thanh Toán</Link>
           </div>
         </div>
       </div>

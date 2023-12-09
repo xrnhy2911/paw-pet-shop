@@ -47,7 +47,7 @@ section {
     color: white;
     line-height: 1.5;
     margin-bottom: 4px;
-    margin-right: 80%;
+    margin-right: 60%;
 }
 .credit-hd-description {
     font-size: 15px;
@@ -74,7 +74,7 @@ section {
 .credit-body {
     background-color: white;
     border-radius: 0 0 8px 8px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, .05), inset 0 8px 0 rgba(0, 0, 0, .05);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .05), inset 0 8px 0 white;
     position: relative;
     padding-top: 8px;
     overflow: hidden;
@@ -177,7 +177,7 @@ section {
     padding-bottom: 16px;
 }
 .credit-sum-total .credit-sum-name {
-    color:#111827;
+    color: white;
 }
 .credit-sum-total .credit-sum-price {
     font-size: 16px;
@@ -198,7 +198,7 @@ section {
     font-weight: 700;
     margin-bottom: 12px;
     line-height: 1.5;
-    margin-right: 65%;
+    margin-right: 60%;
 }
 .credit-method {
     display: flex;
@@ -304,7 +304,7 @@ input:checked + .credit-method-item::before {
     transition: all .15s ease-in-out;
 }
 .credit-form-submit-button:hover {
-    background-color: rgb(3, 129, 255);
+    background-color:white;
 }
 .credit-form-submit-button > i {
     margin-right: 8px;

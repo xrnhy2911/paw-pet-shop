@@ -53,9 +53,9 @@ export default function Credit() {
               <div className="credit-hd-icon">
                 <i className="ri-flashlight-fill"></i>
               </div>
-              <div className="credit-hd-title">Order sum</div>
+              <div className="credit-hd-title">Khách Hàng Thân Thiết</div>
               <p className="credit-hd-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+                
               </p>
             </div>
 
@@ -64,27 +64,27 @@ export default function Credit() {
                 <div className="credit-plan">
                   <div className="credit-plan-type">Pro</div>
                   <div className="credit-plan-info">
-                    <div className="credit-plan-name">Patron</div>
-                    <div className="credit-plan-price">Discount 20% </div>
+                    <div className="credit-plan-name"></div>
+                    <div className="credit-plan-price">Giảm 20% </div>
                   </div>
                   <a href="/credit" className="credit-plan-change">
-                    Change
+                    Sửa đổi
                   </a>
                 </div>
                 <div className="credit-sum">
                   <div className="credit-sum-item">
-                    <div className="credit-sum-name">Subtotal</div>
+                    <div className="credit-sum-name">Tổng Tiền</div>
                     <div className="credit-sum-price">360.000 vnd</div>
                   </div>
 
                   <div className="credit-sum-item">
-                    <div className="credit-sum-name">Discount 20%</div>
+                    <div className="credit-sum-name">Giảm  20%</div>
                     <div className="credit-sum-price">-36.000 vnd</div>
                   </div>
 
                   <div className="credit-sum-divider"></div>
                   <div className="credit-sum-item credit-sum-total">
-                    <div className="credit-sum-name">Total</div>
+                    <div className="credit-sum-name">Thành Tiền</div>
                     <div className="credit-sum-price">324.000 vnd</div>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function Credit() {
 
           <div className="credit-rignt">
             <form action="" className="credit-form" onSubmit={handleSubmit}>
-              <h1 className="credit-title">Payment Details</h1>
+              <h1 className="credit-title">Chi Tiết Thanh Toán</h1>
               <div className="credit-method">
                 <input
                   type="radio"
@@ -151,7 +151,7 @@ export default function Credit() {
                   for="email"
                   className="credit-form-label credit-form-label-required"
                 >
-                  Email Address
+                  Email
                 </label>
               </div>
 
@@ -169,7 +169,7 @@ export default function Credit() {
                   for="card-number"
                   className="credit-form-label credit-form-label-required"
                 >
-                  Card Number
+                  Số Thẻ
                 </label>
               </div>
 
@@ -188,7 +188,7 @@ export default function Credit() {
                     for="expiry-date"
                     className="credit-form-label credit-form-label-required"
                   >
-                    Expiry Date
+                    Ngày Hết Hạn
                   </label>
                 </div>
 
@@ -211,7 +211,7 @@ export default function Credit() {
                 </div>
               </div>
               <button type="submit" className="credit-form-submit-button">
-                <i className="ri-wallet-line"></i> Pay
+                <i className="ri-wallet-line"></i> Thanh Toán
               </button>
             </form>
           </div>

@@ -10,10 +10,13 @@ export default function About() {
                 <img src={cb} alt="" srcset="" />
             </div>
             <div className="sb_about-text">
-                <h1>OUR YUMMY STORY</h1>
+                <h1>NHỮNG CÂU CHUYỆN HAY</h1>
                 <p className="text">
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you. <br />
-                This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+                Trong một góc phố nhỏ, có một cửa hàng mèo tên là "PawPet". Chủ nhân của cửa hàng là một người đam mê mèo và đã dành nhiều năm chăm sóc và nuôi dưỡng những chú mèo độc đáo.
+
+Mỗi chú mèo trong cửa hàng đều có một câu chuyện riêng biệt. Có mèo được cứu sống từ đường phố, có mèo từ những ngôi nhà không thể giữ chúng nữa, và còn có những chú mèo mang theo những câu chuyện vui nhộn từ quê hương xa xôi. Mọi người trong của hàng tận tâm chăm sóc từng chú mèo, tạo nên một cộng đồng mèo hòa mình vào không gian ấm cúng và yên bình của cửa hàng.
+
+Khách hàng khi đến "PawPet" không chỉ mua được những chú mèo đáng yêu mà còn được trải nghiệm không khí thư giãn và hạnh phúc. Ngoài ra khách hàng còn được chia sẻ kiến thức về việc chăm sóc mèo và đưa ra những lời khuyên hữu ích cho những người mới sở hữu mèo.
                 </p>
             </div>
             </div>

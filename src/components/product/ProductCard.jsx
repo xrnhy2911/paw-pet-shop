@@ -33,7 +33,7 @@ export default function ProductCard() {
   return (
     <>
       <Container className="py-2">
-        <h1 className="m-4">Our Products</h1>
+        <h1 className="m-4">Sản Phẩm Của Cửa Hàng</h1>
         <SearchBar />
         <Row xs={1} md={3} className="g-4 m-4">
           {productsToShow.map((productData, idx) => (
@@ -49,13 +49,13 @@ export default function ProductCard() {
                   <Card.Title className="mt-auto">
                     <span className="h3 mt-auto">{productData.title}</span>
                   </Card.Title>
-                  <Card.Title>Price: {productData.price}</Card.Title>
+                  <Card.Title>Giá: {productData.price}</Card.Title>
                   <button
                     id="custom-button"
                     className="mx-auto shadow"
                     onClick={() => handleShowModal(productData)}
                   >
-                    Preview
+                    Xem Trước
                   </button>
                 </Card.Body>
               </Card>

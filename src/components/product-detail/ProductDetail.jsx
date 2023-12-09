@@ -18,7 +18,7 @@ const ProductDetail = () => {
   const productDetails = {
     title: "Munchkin Cat",
     price: "20,000,000",
-    description: "This is a lovely Munchkin Cat.",
+    description: "Chú mèo Munchkin, với đôi chân ngắn ngủn đặc trưng, tạo nên hình ảnh đáng yêu và độc đáo. ",
     productId: productId,
     image: image1,
   };
@@ -59,28 +59,28 @@ const ProductDetail = () => {
                 </Card.Title>
                 <Card.Subtitle className="product-subtitle">
                   <span className="h5" style={{ color: "#5d6bb0" }}>
-                    Price: {productDetails.price} VNĐ
+                    Giá: {productDetails.price} VNĐ
                   </span>
                 </Card.Subtitle>
                 <Card.Text className="mt-2">
-                  <strong>Product ID:</strong> {productDetails.productId}
+                  <strong>Mã Sản Phẩm:</strong> {productDetails.productId}
                 </Card.Text>
                 <Card.Text className="product-description">
-                  <strong>Description:</strong> {productDetails.description}
+                  <strong>Miêu Tả:</strong> {productDetails.description}
                 </Card.Text>
                 <div className="button-container mt-5 mb-3 ">
                   <button
                     className="add-to-cart-button"
                     onClick={handleAddToCart}
                   >
-                    Add to Cart
+                    Thêm Vào Giỏ Hàng
                   </button>
                   <button className="buy-now-button" onClick={handleBuyNow}>
-                    Buy Now
+                    Mua Ngay
                   </button>
                 </div>
                 <p className="mt-2">
-                  <Link to="/products">Back to Product Page</Link>
+                  <Link to="/products">Quay Lại Trang Mua Sắm</Link>
                 </p>
               </Card.Body>
             </Card>
