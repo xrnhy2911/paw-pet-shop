@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Cart() {
   return (
     <div className="cart-container">
-      <h1>My Cart</h1>
+      <h1>Giỏ hàng của tôi</h1>
       <div className="cart">
         <div className="cart-product">
           <div className="product">
@@ -23,7 +23,7 @@ export default function Cart() {
               </p>
               <p className="product-remove">
                 <i className="fa fa-trash" aria-hidden="true"></i>
-                <span className="remove">Remove</span>
+                <span className="remove">Gỡ bỏ</span>
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function Cart() {
               </p>
               <p className="product-remove">
                 <i className="fa fa-trash" aria-hidden="true"></i>
-                <span className="remove">Remove</span>
+                <span className="remove">Gỡ bỏ</span>
               </p>
             </div>
           </div>

@@ -32,7 +32,7 @@ const SmallShoppingCart = ({ show, onHide }) => {
         closeButton
         style={{ backgroundColor: "#302f51", color: "white" }}
       >
-        <Modal.Title>Your Cart</Modal.Title>
+        <Modal.Title>Giả hàng của bạn</Modal.Title>
       </Modal.Header>
       <Modal.Body
         style={{ maxHeight: "calc(100vh - 120px)", overflowY: "auto" }}
@@ -78,7 +78,7 @@ const SmallShoppingCart = ({ show, onHide }) => {
               onClick={() => navigate(`/cart`)}
               block
             >
-              View In Detail
+              Xem chi tiết giỏ hàng
             </button>
           </Col>
         </Row>

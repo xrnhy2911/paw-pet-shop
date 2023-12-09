@@ -10,43 +10,43 @@ export default function Footer() {
       <div className="sb_footer">
         <div className="sb_footer-link">
           <div className="sb_footer-link_div" style={{ fontWeight: 700 }}>
-            <h4>COMPANY</h4>
+            <h4>CÔNG TY</h4>
             <a href="/home">
-              <p>HOME</p>
+              <p>TRANG CHỦ</p>
             </a>
 
             <a href="/shop">
-              <p>SHOP</p>
+              <p>CỬA HÀNG</p>
             </a>
 
             <a href="/about">
-              <p>ABOUT</p>
+              <p>THÔNG TIN</p>
             </a>
 
             <a href="/contact">
-              <p>CONTACT</p>
+              <p>LIÊN HỆ</p>
             </a>
           </div>
           <div className="sb_footer-link_div">
-            <h4>GET HELP</h4>
+            <h4>GIÚP ĐỠ</h4>
             <a href="/faq">
               <p>FAQ</p>
             </a>
 
             <a href="/Shipping">
-              <p>Shipping & Returns</p>
+              <p>GIAO VÀ TRẢ HÀNG</p>
             </a>
 
             <a href="/Store Policy">
-              <p>Store Policy</p>
+              <p>Chính sách cửa hàng</p>
             </a>
 
             <a href="/Payment Methods">
-              <p>Payment Methods</p>
+              <p>Phương thức thanh toán</p>
             </a>
           </div>
           <div className="sb_footer-link_div">
-            <h4>CONTACTS</h4>
+            <h4>LIÊN HỆ</h4>
             <a href="/hotline">
               <p>123-456-789</p>
             </a>
@@ -57,18 +57,18 @@ export default function Footer() {
           </div>
 
           <div className="sb_footer-link_div">
-            <h4>FOLLOW US</h4>
+            <h4>THEO DÕI</h4>
             <div className="socialmedia">
-              <p>
-                <img className="social-media-image" src={insta} alt="" srcset="" />
-              </p>
               <p>
                 <img
                   className="social-media-image"
-                  src={fb}
+                  src={insta}
                   alt=""
                   srcset=""
                 />
+              </p>
+              <p>
+                <img className="social-media-image" src={fb} alt="" srcset="" />
               </p>
             </div>
           </div>

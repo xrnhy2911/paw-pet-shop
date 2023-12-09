@@ -33,14 +33,14 @@ export default function Credit() {
 
     if (emptyFields.length > 0) {
       const fieldNames = emptyFields.map(([field]) => field);
-      const errorMessage = `Please fill in the following field${
+      const errorMessage = `Xin vui lòng điền vào các trường còn trống sau:${
         fieldNames.length > 1 ? "s" : ""
       }: ${fieldNames.join(", ")}.`;
 
       alert(errorMessage);
     } else {
       // Implement your payment logic here
-      alert("Payment submitted!");
+      alert("Đặt hàng thành công!");
       navigate("/products");
     }
   };

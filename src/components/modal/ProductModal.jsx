@@ -41,7 +41,7 @@ export default function ProductModal(props) {
       >
         <Modal.Header closeButton onClick={handleClose}>
           <Modal.Title>
-            <h2 style={{ color: "#3a43b7" }}>Preview</h2>
+            <h2 style={{ color: "#3a43b7" }}>Xem trước</h2>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="grid-example">
@@ -60,14 +60,14 @@ export default function ProductModal(props) {
                 <h5 className="mt-2" style={{ color: "#5d6bb0" }}>
                   Price: {productData.price} VNĐ
                 </h5>
-                <p className="mt-2">Product ID: {productData.productId}</p>
+                <p className="mt-2">Mã Sản Phẩm: {productData.productId}</p>
                 <button
                   // id="custom-button2"
                   className="add-to-cart-button mt-2"
                   style={{ width: "100%" }}
                   onClick={handleAddToCart}
                 >
-                  Add to Cart
+                  Thêm vào giỏ hàng
                 </button>
                 <button
                   // id="custom-button"
@@ -75,14 +75,14 @@ export default function ProductModal(props) {
                   style={{ width: "100%" }}
                   onClick={handleBuyNow}
                 >
-                  Buy Now
+                  Mua ngay
                 </button>
                 <p style={{ textAlign: "right" }}>
                   <Link
                     to={`/product-detail/${productData.productId}`}
                     onClick={() => {}}
                   >
-                    More Details
+                    Chi tiết sản phẩm
                   </Link>
                 </p>
               </Col>

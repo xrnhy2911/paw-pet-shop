@@ -31,14 +31,14 @@ export default function Header() {
               navbarScroll
             >
               <Nav.Link as={Link} className="mx-3 mt-3 " to={"/home"}>
-                HOME
+                TRANG CHỦ
               </Nav.Link>
               <Nav.Link
                 as={Link}
                 to={"/products"}
                 className="custom-sub-nav mx-3 mt-3"
               >
-                PRODUCTS
+                MUA HÀNG
               </Nav.Link>
               <NavDropdown
                 title="Link"
@@ -51,26 +51,25 @@ export default function Header() {
                   href="/about"
                   style={{ fontSize: "16px", fontWeight: "700" }}
                 >
-                  ABOUT
+                  THÔNG TIN
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="/contact"
                   style={{ fontSize: "16px", fontWeight: "700" }}
                 >
-                  CONTACT
+                  LIÊN HỆ
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   className="custom-dropdown-item"
                   href="#action5"
                 >
                   Something else here
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
               <Nav.Link className="mx-1 mt-3" as={Link} to="/cart">
                 <BsCart3 />
-                {/* Replace with your actual shopping cart component */}
               </Nav.Link>
               <NavDropdown
                 className="mx-1 mt-3"
@@ -83,21 +82,21 @@ export default function Header() {
                   to="/profile"
                   className="custom-dropdown-item"
                 >
-                  Profile
+                  Hồ sơ
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   as={Link}
                   to="/login"
                   className="custom-dropdown-item"
                 >
-                  Log In
+                  Đăng nhập
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item
                   href="#action4"
                   className="custom-dropdown-item"
                 >
-                  Log Out
+                  Đăng xuất
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
