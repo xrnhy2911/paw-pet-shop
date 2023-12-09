@@ -4,7 +4,13 @@ import cat from "../../img/bonludan.jpeg";
 import pate from "../../img/snappy.jpg";
 // import bat from "../../img/bat.jpg";
 import { Link } from "react-router-dom";
+const handleIncreaseQuantity = () => {
+  // Add your logic to increase the quantity
+};
 
+const handleDecreaseQuantity = () => {
+  // Add your logic to decrease the quantity
+};
 export default function Cart() {
   return (
     <div className="cart-container">
@@ -19,7 +25,13 @@ export default function Cart() {
               <h4 className="product-offer">10%</h4>
               <p className="product-quantity">
                 {" "}
-                <input value="1" name="" />{" "}
+                <button className="btn" onClick={handleDecreaseQuantity}>
+                  -
+                </button>
+                <input value="1" name="" />
+                <button className="btn" onClick={handleIncreaseQuantity}>
+                  +
+                </button>
               </p>
               <p className="product-remove">
                 <i className="fa fa-trash" aria-hidden="true"></i>
@@ -36,7 +48,13 @@ export default function Cart() {
               <h4 className="product-offer">10%</h4>
               <p className="product-quantity">
                 {" "}
-                <input value="1" name="" />{" "}
+                <button className="btn" onClick={handleDecreaseQuantity}>
+                  -
+                </button>
+                <input value="1" name="" />
+                <button className="btn" onClick={handleIncreaseQuantity}>
+                  +
+                </button>
               </p>
               <p className="product-remove">
                 <i className="fa fa-trash" aria-hidden="true"></i>
