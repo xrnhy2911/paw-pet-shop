@@ -11,37 +11,37 @@ const Profile = () => {
                         <img src={theImg} alt="" className="profile-pic" />
                         <h1 className="heading">Claire Doe</h1>
                         <div className="location">
-                            <p>Member</p>
+                            <p>Thành Viên</p>
                         </div>
                         <div className="stats">
                             <div className="col-4">
                                 <h4>20</h4>
-                                <p>Reviews</p>
+                                <p>Đánh Giá</p>
                             </div>
                             <div className="col-4">
                                 <h4>10</h4>
-                                <p>Communities</p>
+                                <p>Diễn Đàn</p>
                             </div>
                             <div className="col-4">
                                 <h4>100</h4>
-                                <p>Discussions</p>
+                                <p>Thảo Luận</p>
                             </div>
                         </div>
                     </div>
                 </header>
                 <div className="proflie-content">
                     <div>
-                        <h2>Biography</h2>
+                        <h2>Tiểu Sử</h2>
                         <p>
-                            I am a software engineer who loves to learn new things. I have a passion for coding and I love to build things.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit magnam, dignissimos totam ea est modi officiis, adipisci ipsa incidunt voluptatibus voluptas quod asperiores. Ullam id, repellat vitae tenetur deleniti facere!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi libero rem a reprehenderit delectus, neque dolore ullam. Distinctio modi nam et sequi reprehenderit unde nobis tenetur minus veniam vero!
+                        Tôi một người mua mèo đam mê, bắt đầu hành trình của mình vào thế giới của những chú mèo từ khi còn là sinh viên đại học. Sinh ra và lớn lên trong một thành phố nhỏ, tôi luôn có niềm đam mê đặc biệt đối với thế giới động vật, đặc biệt là mèo.
+
+Tình yêu của tôi đối với mèo bắt đầu khi cô nhận nuôi một chú mèo nhỏ bị bỏ rơi trước cổng nhà. Từ đó, tôi bắt đầu khám phá thế giới đặc biệt của những chú mèo và dành thời gian nghiên cứu về việc chăm sóc, nuôi dưỡng, và tạo môi trường sống tốt nhất cho chúng.
                         </p>
                     </div>
                     <div>
-                        <h2>Profile</h2>
+                        <h2>Hồ Sơ</h2>
                         <p>
-                            Join date: 11th 14, 2023
+                            Thời Gian Tham Gia: 11th 14, 2023
                         </p>
                     </div>
                 </div>

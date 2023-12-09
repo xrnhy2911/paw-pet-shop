@@ -15,7 +15,7 @@ export default function SearchPage() {
         </div>
         <input
           type="search"
-          placeholder="What're you searching for?"
+          placeholder="Tìm Kiếm"
           aria-describedby="button-addon2"
           className="form-control border-0 bg-light"
         />

@@ -18,27 +18,26 @@ export default function Home() {
           <img src={chaBong} alt="" />
         </div>
         <div className="store-quote">
-          <h4>
-            YOUR BEST <br /> FRIEND DESERVES <br /> THE BEST MEAL
+          <h4> Người Bạn Thân Nhất 
           </h4>
         </div>
         <div
           className="home-frame-1"
         >
-          <h1 className="home-h1">Story Teller</h1>
+          <h1 className="home-h1">Câu Chuyện</h1>
           <div className="banner-container" >
             <img src={chaBong1} alt="Banner" className="banner-image" />
             <div className='hover-story'>
-              <p>There’s a cat named Caté <br /> Seeking for the pâté <br /> Loves to have a treat <br /> ... hates to pay for it <br />
+              <p>Có một con mèo tên là Chà Bông  <br /> Đang tìm kiếm pate <br /> Thích được cho ăn <br /> .... ghét phải trả tiền <br />
 
-                Sneaks into a café <br /> Sniffs foods on display <br /> Sees a plate of pâté <br /> "It’s a lucky day..."</p>
+              Lẻn vào quán cà phê <br /> Đánh hơi các món ăn trưng bày <br /> Nhìn thấy một đĩa pa tê <br /> "Thật là một ngày may mắn..."</p>
 
             </div>
             <a href="/products">
               <button
                 className="hover-button"
               >
-                SHOP NOW
+                SẢN PHẨM
               </button>
             </a>
 
@@ -47,7 +46,7 @@ export default function Home() {
           </div>
         </div>
         <div className="home-frame-2">
-          <h1 className="home-h1">Best Sellers</h1>
+          <h1 className="home-h1">Hàng Bán Chạy Nhất</h1>
 
           <div className="home-content">
             <Reactslider />

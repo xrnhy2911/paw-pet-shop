@@ -41,7 +41,7 @@ export default function Header() {
                 MUA HÀNG
               </Nav.Link>
               <NavDropdown
-                title="Link"
+                title="XEM THÊM"
                 id="navbarScrollingDropdown"
                 align={"end"}
                 className="custom-sub-nav mt-3 mx-3"
