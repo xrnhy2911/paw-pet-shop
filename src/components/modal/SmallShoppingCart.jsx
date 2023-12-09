@@ -92,7 +92,7 @@ const SmallShoppingCart = ({ show, onHide }) => {
         <Row>
           <Col>
             <p className="mb-0 font-weight-bold flex">
-              Total: {calculateTotal()}
+              Tổng tiền: {calculateTotal()}
             </p>
           </Col>
         </Row>
