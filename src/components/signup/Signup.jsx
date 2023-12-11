@@ -30,7 +30,7 @@ export default function Signup() {
               <input type="password" name="cf_pass" placeholder="Nhập lại mật khẩu" />
               <button type="submit" className="login_btn">
                 {" "}
-                Đăng kí <i className="fas fa-paper"></i>
+                Đăng ký <i className="fas fa-paper"></i>
               </button>
               <p class="title_first">
                 Bạn đã có tài khoản? <a href="/login" class="css_btn_1"> Đăng nhập </a>
