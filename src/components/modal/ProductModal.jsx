@@ -50,17 +50,17 @@ export default function ProductModal(props) {
               <Col xs={12} md={6}>
                 <Image
                   src={productData.image}
-                  alt={productData.title}
+                  alt={productData.name}
                   fluid
                   rounded
                 />
               </Col>
               <Col xs={12} md={6}>
-                <h2 style={{ fontWeight: "600" }}>{productData.title}</h2>
+                <h2 style={{ fontWeight: "600" }}>{productData.name}</h2>
                 <h5 className="mt-2" style={{ color: "#5d6bb0" }}>
                   Price: {productData.price} VNĐ
                 </h5>
-                <p className="mt-2">Mã Sản Phẩm: {productData.productId}</p>
+                <p className="mt-2">Mã Sản Phẩm: {productData._id}</p>
                 <button
                   // id="custom-button2"
                   className="add-to-cart-button mt-2"

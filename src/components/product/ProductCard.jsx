@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 // import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import ProductModal from "../modal/ProductModal";
-import { productDataList } from "../../data/data";
+//import { productDataList } from "../../data/data";
 
 import "./productCard.css";
 
@@ -16,7 +17,26 @@ export default function ProductCard() {
     show: false,
     productData: null,
   });
+
   const [visibleProducts, setVisibleProducts] = useState(6); // Số lượng sản phẩm muốn hiển thị ban đầu
+  const [productDataList, setProductDataList] = useState([]);
+
+  useEffect(() => {
+    const petApi = "http://localhost:3001/v1/pet/getAllPets";
+    const productApi = "http://localhost:3001/v1/product/getAllProducts";
+    axios
+      .all([axios.get(petApi), axios.get(productApi)])
+      .then(([petResponse, productResponse]) => {
+        const petData = petResponse.data;
+        const productData = productResponse.data;
+        const allData = [...petData, ...productData];
+        setProductDataList(allData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []); // Gọi API khi component được tạo
+
   const productsToShow = productDataList.slice(0, visibleProducts);
 
   const handleShowModal = (productData) => {
@@ -30,6 +50,7 @@ export default function ProductCard() {
   const handleShowMore = () => {
     setVisibleProducts((prev) => prev + 6); // Tăng số lượng sản phẩm khi bấm nút "Xem thêm"
   };
+
   return (
     <>
       <Container className="py-2">
@@ -47,7 +68,7 @@ export default function ProductCard() {
                 />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="mt-auto">
-                    <span className="h3 mt-auto">{productData.title}</span>
+                    <span className="h3 mt-auto">{productData.name}</span>
                   </Card.Title>
                   <Card.Title>Giá: {productData.price}</Card.Title>
                   <button
